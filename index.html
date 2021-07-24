@@ -13,27 +13,28 @@
         <h1> Sign Up Page Validator</h1>
     </header>
     <main>
-        <form action="POST" >
+        <form method="GET" >
         <div class="sign-up">
             <div>
             <label for="userName"> Enter UserName</label>
             <input type="text" id="userName" name="userName" required>
             </div>
-            <div>
+            <div class="the-email">
                 <label for="email"> Enter Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
-            <div>
+            <div class="the-password">
                 <label for="password"> Enter Password</label>
                 <input type="password" id="password" name="password" required>   
+                <p></p>  
             </div>
-            <div>
-                <label for="rePassWord"> Re-Enter Password</label>
-                <input type="password" id="rePassWord" name="rePassWord" required>
+            <div class="confirm-password">
+                <label for="rePassword"> Re-Enter Password</label>
+                <input type="password" id="rePassword" name="rePassword" required>
             </div>
             <div>
                 <button type="reset">Reset</button>
-                <button type="submit"> Submit</button>
+                <button type="submit"  class="submit"> Submit</button>
             </div>
         </div>
         </form>
